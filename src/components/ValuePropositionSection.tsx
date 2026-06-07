@@ -71,8 +71,10 @@ const benefits: Benefit[] = [
     title: "Soluciones Personalizadas",
     desc: "Cada proyecto se diseña desde cero según las necesidades específicas de tu negocio y tus clientes.",
     icon: (
-      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v3m0 0a3 3 0 100 6m0-6a3 3 0 110 6m-6 3a3 3 0 100 6m0-6a3 3 0 110 6m6 3v-3m0 0a3 3 0 10-6 0m6 0a3 3 0 106 0" />
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
+        <path d="m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9" />
+        <path d="m18 15 4-4" />
+        <path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" />
       </svg>
     ),
   },
