@@ -38,7 +38,7 @@ export function Navbar() {
           <img
             src="/logo.jpeg"
             alt="Logo"
-            className="h-16 w-auto object-contain"
+            className="h-12 w-auto object-contain sm:h-16"
           />
         </a>
 
@@ -85,7 +85,7 @@ export function Navbar() {
 
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="flex flex-col gap-1.5 md:hidden"
+          className="flex flex-col items-center justify-center gap-1 p-2 md:hidden"
           aria-label="Menú"
         >
           <span
