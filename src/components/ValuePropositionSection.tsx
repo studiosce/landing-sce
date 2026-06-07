@@ -16,42 +16,34 @@ const niches: Niche[] = [
   {
     label: "Clínicas",
     icon: (
-      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18z" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v8M8 12h8" />
+      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16M4 12h16" />
       </svg>
     ),
   },
   {
     label: "Barberías",
     icon: (
-      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 6a3 3 0 11-6 0 3 3 0 016 0z" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 18a3 3 0 11-6 0 3 3 0 016 0z" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 12l7.5-3" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 12l7.5 3" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 12V6" />
+      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M5 5l14 14M19 5L5 19" />
       </svg>
     ),
   },
   {
     label: "Salones de Belleza",
     icon: (
-      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6l-6 6" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6l6 6" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v18" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 15a3 3 0 006 0" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 15l3-3 3 3" />
+      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M8 14l8-8a2.5 2.5 0 013.5 3.5l-8 8-5 1.5 1.5-5z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M13 9l2 2" />
       </svg>
     ),
   },
   {
     label: "Pequeños Negocios",
     icon: (
-      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 21v-7.5a.75.75 0 01.75-.75h3a.75.75 0 01.75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M5.106 11.98C3.388 12.36 2.25 13.772 2.25 15.75v.75c0 .414.336.75.75.75h.75m13.5-6.901V9.35m0 0c0-.92.632-1.692 1.498-1.918a2.29 2.29 0 00.23-.416c.136-.294.328-.563.562-.775l.374-.33a.75.75 0 011.036.087 2.257 2.257 0 01.502 1.23c.09.592.09 1.192 0 1.784a2.257 2.257 0 01-.502 1.23.75.75 0 01-1.036.088l-.375-.33a2.54 2.54 0 01-.56-.776 2.29 2.29 0 00-.23-.415 2.29 2.29 0 00-1.5-.919z" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.5h.75a.75.75 0 01.75.75v4.5a.75.75 0 01-.75.75H3a.75.75 0 01-.75-.75v-4.5a.75.75 0 01.75-.75z" />
+      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 10l9-7 9 7v11H3V10z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M8 21V13h8v8" />
       </svg>
     ),
   },
