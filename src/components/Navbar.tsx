@@ -7,7 +7,7 @@ const WHATSAPP = import.meta.env.VITE_WHATSAPP_NUMBER as string;
 
 const navLinks = [
   { label: "Inicio", href: "#hero" },
-  { label: "Qué hacemos", href: "#servicios" },
+  { label: "¿Qué hacemos?", href: "#servicios" },
   { label: "Tu Negocio", href: "#tu-negocio" },
   { label: "Casos de éxito", href: "#casos-de-exito" },
   { label: "Contáctanos", href: "#contacto" },

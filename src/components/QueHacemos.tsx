@@ -61,7 +61,7 @@ export function QueHacemos() {
           className="mx-auto mb-14 max-w-2xl text-center"
         >
           <h2 className="mb-4 text-3xl font-bold text-navy-900 sm:text-4xl">
-            Qué <span className="doodle-underline">hacemos</span>
+            ¿Qué <span className="doodle-underline">hacemos?</span>
           </h2>
           <p className="text-base text-navy-600 sm:text-lg">
             Todo lo que tu negocio necesita para brillar en el mundo digital.

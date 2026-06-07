@@ -15,19 +15,54 @@ interface Benefit {
 const niches: Niche[] = [
   {
     label: "Clínicas",
-    icon: <span className="text-lg">💉</span>,
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
+        <path d="m14.479 19.374-.971.939a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5a5.2 5.2 0 0 1-.219 1.49" />
+        <path d="M15 15h6" />
+        <path d="M18 12v6" />
+      </svg>
+    ),
   },
   {
     label: "Barberías",
-    icon: <span className="text-lg">✂️</span>,
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
+        <circle cx="6" cy="6" r="3" />
+        <path d="M8.12 8.12 12 12" />
+        <path d="M20 4 8.12 15.88" />
+        <circle cx="6" cy="18" r="3" />
+        <path d="M14.8 14.8 20 20" />
+      </svg>
+    ),
   },
   {
     label: "Salones de Belleza",
-    icon: <span className="text-lg">💄</span>,
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
+        <path d="M3 3h.01" />
+        <path d="M7 5h.01" />
+        <path d="M11 7h.01" />
+        <path d="M3 7h.01" />
+        <path d="M7 9h.01" />
+        <path d="M3 11h.01" />
+        <rect width="4" height="4" x="15" y="5" />
+        <path d="m19 9 2 2v10c0 .6-.4 1-1 1h-6c-.6 0-1-.4-1-1V11l2-2" />
+        <path d="m13 14 8-2" />
+        <path d="m13 19 8-2" />
+      </svg>
+    ),
   },
   {
     label: "Pequeños Negocios",
-    icon: <span className="text-lg">🏪</span>,
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
+        <path d="M22 18H6a2 2 0 0 1-2-2V7a2 2 0 0 0-2-2" />
+        <path d="M17 14V4a2 2 0 0 0-2-2h-1a2 2 0 0 0-2 2v10" />
+        <rect width="13" height="8" x="8" y="6" rx="1" />
+        <circle cx="18" cy="20" r="2" />
+        <circle cx="9" cy="20" r="2" />
+      </svg>
+    ),
   },
 ];
 
@@ -119,7 +154,7 @@ export function ValuePropositionSection() {
                   key={n.label}
                   className="group flex items-center gap-4 rounded-xl border border-gray-100 bg-white px-5 py-4 shadow-sm transition-all hover:border-red-accent/30 hover:shadow-md"
                 >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-red-accent/10 transition-colors group-hover:bg-red-accent">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-red-accent/10 text-red-accent transition-colors group-hover:bg-red-accent group-hover:text-white">
                     {n.icon}
                   </div>
                   <span className="text-sm font-semibold text-navy-800">
