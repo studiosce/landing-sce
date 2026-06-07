@@ -17,7 +17,11 @@ const niches: Niche[] = [
     label: "Clínicas",
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16M4 12h16" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5h6v8H9V5z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M8 7h8" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 13v4" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M10 17l2 2 2-2" />
       </svg>
     ),
   },
@@ -25,7 +29,11 @@ const niches: Niche[] = [
     label: "Barberías",
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M5 5l14 14M19 5L5 19" />
+        <circle cx="5" cy="17" r="3" />
+        <circle cx="19" cy="17" r="3" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M7 15L16 5" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M17 15L8 5" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 5v2" />
       </svg>
     ),
   },
