@@ -15,45 +15,19 @@ interface Benefit {
 const niches: Niche[] = [
   {
     label: "Clínicas",
-    icon: (
-      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5h6v8H9V5z" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M8 7h8" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 13v4" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M10 17l2 2 2-2" />
-      </svg>
-    ),
+    icon: <span className="text-lg">💉</span>,
   },
   {
     label: "Barberías",
-    icon: (
-      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <circle cx="5" cy="17" r="3" />
-        <circle cx="19" cy="17" r="3" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M7 15L16 5" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M17 15L8 5" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 5v2" />
-      </svg>
-    ),
+    icon: <span className="text-lg">✂️</span>,
   },
   {
     label: "Salones de Belleza",
-    icon: (
-      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M8 14l8-8a2.5 2.5 0 013.5 3.5l-8 8-5 1.5 1.5-5z" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M13 9l2 2" />
-      </svg>
-    ),
+    icon: <span className="text-lg">💄</span>,
   },
   {
     label: "Pequeños Negocios",
-    icon: (
-      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3 10l9-7 9 7v11H3V10z" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M8 21V13h8v8" />
-      </svg>
-    ),
+    icon: <span className="text-lg">🏪</span>,
   },
 ];
 
@@ -145,7 +119,7 @@ export function ValuePropositionSection() {
                   key={n.label}
                   className="group flex items-center gap-4 rounded-xl border border-gray-100 bg-white px-5 py-4 shadow-sm transition-all hover:border-red-accent/30 hover:shadow-md"
                 >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-red-accent/10 text-red-accent transition-colors group-hover:bg-red-accent group-hover:text-white">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-red-accent/10 transition-colors group-hover:bg-red-accent">
                     {n.icon}
                   </div>
                   <span className="text-sm font-semibold text-navy-800">
