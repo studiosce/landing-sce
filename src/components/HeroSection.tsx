@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Button } from "./ui/Button";
 
+const DEMO_URL = import.meta.env.VITE_DEMO_URL as string;
+
 export function HeroSection() {
   const scrollTo = (id: string) => {
     document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
@@ -73,6 +75,17 @@ export function HeroSection() {
             <Button variant="outline" size="lg" onClick={() => scrollTo("#servicios")}>
               Ver servicios
             </Button>
+            <a
+              href={DEMO_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-xl border-2 border-red-accent bg-red-accent px-6 py-3 text-base font-semibold text-white shadow-lg shadow-red-accent/25 transition-all hover:bg-red-hover hover:shadow-xl"
+            >
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 010 1.972l-11.54 6.347a1.125 1.125 0 01-1.667-.986V5.653z" />
+              </svg>
+              Ver Demo Interactiva en Vivo
+            </a>
           </motion.div>
         </div>
       </div>

@@ -4,6 +4,7 @@ import { cn } from "../lib/utils";
 
 const EMAIL = import.meta.env.VITE_CONTACT_EMAIL as string;
 const WHATSAPP = import.meta.env.VITE_WHATSAPP_NUMBER as string;
+const DEMO_URL = import.meta.env.VITE_DEMO_URL as string;
 
 const navLinks = [
   { label: "Inicio", href: "#hero" },
@@ -68,6 +69,17 @@ export function Navbar() {
         </ul>
 
         <div className="hidden items-center gap-3 md:flex">
+          <motion.a
+            href={DEMO_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            animate={{ scale: [1, 1.04, 1] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            whileHover={{ scale: 1.05 }}
+            className="rounded-xl bg-red-accent px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-red-accent/25 transition-colors hover:bg-red-hover"
+          >
+            Probar Demo
+          </motion.a>
           <button
             onClick={openWhatsApp}
             className="rounded-xl border border-gray-200 p-2.5 text-navy-600 transition-colors hover:border-green-500 hover:text-green-600"
@@ -140,8 +152,17 @@ export function Navbar() {
                   )}
                 </li>
               ))}
-              <li className="mt-3 flex gap-3 px-4">
-                <button
+              <li className="mt-3 flex flex-col gap-3 px-4">
+                <a
+                  href={DEMO_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 rounded-xl bg-red-accent px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-red-accent/25"
+                >
+                  Probar Demo
+                </a>
+                <div className="flex gap-3">
+                  <button
                   onClick={openWhatsApp}
                   className="flex flex-1 items-center justify-center gap-2 rounded-xl border border-gray-200 px-4 py-2.5 text-sm font-medium text-navy-700 transition-colors hover:border-green-500 hover:text-green-600"
                 >
@@ -159,6 +180,7 @@ export function Navbar() {
                   </svg>
                   Correo
                 </button>
+                </div>
               </li>
             </ul>
           </motion.div>
